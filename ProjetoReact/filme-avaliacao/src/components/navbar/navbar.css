@@ -1,0 +1,37 @@
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between; /* Para espaçar os elementos para os lados opostos */
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar .logo {
+  margin-left: 20px; /* Margem à esquerda para a logo */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Para alinhar os itens na mesma linha */
+}
+
+.navbar li {
+  margin-left: 10px; /* Adicionando uma margem entre os links */
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #ddd;
+  color: black;
+}
