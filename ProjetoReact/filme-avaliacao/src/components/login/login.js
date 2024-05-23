@@ -1,42 +1,66 @@
 
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      console.log(`Email: ${email}, Password: ${password}`);
-      // Aqui você pode adicionar a lógica para autenticar o usuário
-    };
+   //gerenciador de estado
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] =  useState('');
+
+  //consrante para fazer a navegaçãp
+
+  const navigate = useNavigate();
+
+  //constante porque essa função na memória do computador não vai ser alterada
+  const handleLogin = async () => {
+      //armazena os dados
+                      //promise = feita , cumprida e pendente
+      
+          // try catch tenta acessar e pega o erro quase de problema
+
+          try {
+              const response = await fetch('http://localhost:8080/login',{
+                  method:'POST',
+                  headers:{
+                          'Content-Type':'application/json', 
+                  },
+                  body:JSON.stringify({email,password})
+              });
+
+
+              //verifica  a resposta
+              if(response.ok){
+                  navigate('/')
+              }else{
+                  setError('Dados inexistentes')
+              }
+          } catch (error) {
+              console.error(error)
+          }
+  }
     return (
-        <div className="login-container">
-        <form className="login-form" onSubmit={handleSubmit}>
-          <h2>Login</h2>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
+      <div class="container">
+      <h2>Tela de Login</h2>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"
+            value={email}
+            onChange={(e) => setEmail (e.target.value)}
+            placeholder="Email"
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="password">Senha:</label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
+          <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha"
+            value={password}
+            onChange={(e) => setPassword (e.target.value)}
+            placeholder="Senha"
             />
           </div>
-          <button type="submit">Entrar</button>
-        </form>
-      </div>
+        <button onClick={handleLogin}>Entrar</button>
+        {error && <p>{error}</p>}
+    </div>
     );
 }
 

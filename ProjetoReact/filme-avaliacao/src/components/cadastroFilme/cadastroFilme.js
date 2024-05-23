@@ -1,95 +1,119 @@
 import React, { useState } from 'react';
 const CadastroFilme = () => {
+  
+    const  [formData, setFormData] = useState({titulo:'',genero:'', ano:'',categoria:'',duracao:'',descricao:'',url:''});
+    const  [FeedBack,setFeedBack]= useState({message:'',type:''});
 
-    const [title, setTitle] = useState('');
-  const [genre, setGenre] = useState('');
-  const [year, setYear] = useState('');
-  const [category, setCategory] = useState('');
-  const [duration, setDuration] = useState('');
-  const [description, setDescription] = useState('');
-  const [image, setImage] = useState('');
+    const handleChange= (e)=>{
+      const {titulo, value} = e.target;
+      setFormData (prevState => ({...prevState,[titulo]: value}))
+      
+      }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(`Title: ${title}, Genre: ${genre}, Year: ${year}, Category: ${category}, Duration: ${duration}, Description: ${description}, Image: ${image}`);
-    // Aqui você pode adicionar a lógica para cadastrar o filme
-  };
+    const handleSubmitForm = async (e) =>{
+      e.preventDefault(); //prevenir comportamentos padrões do formulário
+      try {
+        const response = await fetch('http://localhost:8080/cadastro',{
+          method:'POST',
+          headers:{
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        })
+        if (response.ok) {
+          setFeedBack({message:'Cadastrado', type:'sucesso'})
+        }else{
+          const erro = await response.json()
+          setFeedBack({message:erro.message, type:'error'})
+        }
+          setFormData({titulo:'',genero:'', ano:'',categoria:'',duracao:'',descricao:'',url:''})
+    
+      } catch (error) {
+        console.error(error)
+        setFeedBack({message:"Falha ao cadastrar", type:"erro"})
+      }
+    }
 
     return (
         <div className="movie-container">
-      <form className="movie-form" onSubmit={handleSubmit}>
+      <form className="movie-form" onSubmit={handleSubmitForm}>
         <h2>Cadastro de Filme</h2>
         <div className="form-group">
-          <label htmlFor="title">Título:</label>
+          <label htmlFor="title">Nome:</label>
           <input
             type="text"
-            id="title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            id="title" name="title" value={formData.title} onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Genero:</label>
+          <input
+            type="text"
+            id="genero"
+            name='genero'
+            value={formData.genero}
+            onChange={handleChange}
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="genre">Gênero:</label>
-          <input
-            type="text"
-            id="genre"
-            value={genre}
-            onChange={(e) => setGenre(e.target.value)}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="year">Ano:</label>
+          <label htmlFor="ano">Ano:</label>
           <input
             type="number"
-            id="year"
-            value={year}
-            onChange={(e) => setYear(e.target.value)}
-            required
+            id="ano"
+            value={formData.ano}
+            onChange={handleChange}
+           
           />
         </div>
         <div className="form-group">
-          <label htmlFor="category">Categoria:</label>
+          <label htmlFor="categoria">Categoria:</label>
           <input
             type="text"
-            id="category"
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-            required
+            id="categoria"
+            value={formData.categoria}
+            onChange={handleChange}
+           
           />
         </div>
         <div className="form-group">
-          <label htmlFor="duration">Duração:</label>
+          <label htmlFor="duracao">Duração:</label>
           <input
             type="text"
-            id="duration"
-            value={duration}
-            onChange={(e) => setDuration(e.target.value)}
-            required
+            id="duracao"
+            value={formData.duracao}
+            onChange={handleChange}
+           
           />
         </div>
         <div className="form-group">
-          <label htmlFor="description">Descrição:</label>
+          <label htmlFor="descricao">Descrição:</label>
           <textarea
-            id="description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            required
+            id="descricao"
+            value={formData.descricao}
+            onChange={handleChange}
+           
           />
         </div>
         <div className="form-group">
-          <label htmlFor="image">Imagem URL:</label>
+          <label htmlFor="url">urlm URL:</label>
           <input
             type="text"
-            id="image"
-            value={image}
-            onChange={(e) => setImage(e.target.value)}
-            required
+            id="url"
+            value={formData.url}
+            onChange={handleChange}
+           
           />
         </div>
         <button type="submit">Cadastrar</button>
       </form>
+      {
+        FeedBack.message && (
+          <div className={FeedBack.type}>
+              {FeedBack.message}
+          </div>
+        )
+      }
     </div>
   );
 

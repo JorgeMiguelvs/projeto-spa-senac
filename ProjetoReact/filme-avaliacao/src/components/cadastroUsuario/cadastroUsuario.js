@@ -1,15 +1,40 @@
 import React, { useState } from 'react';
+import "./cadastroUsuario.css";
 
 const CadastroUsuario = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+  const  [formData, setFormData] = useState({name:'',email:'',password:''});
+  const  [FeedBack,setFeedBack]= useState({message:'',type:''});
   
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      console.log(`Name: ${name}, Email: ${email}, Password: ${password}`);
-
-    };
+    const handleChange= (e)=>{
+      const {name, value} = e.target;
+      setFormData (prevState => ({...prevState,[name]: value}))
+      
+      }
+      const handleSubmit = async (e) =>{
+        e.preventDefault(); //prevenir comportamentos padrões do formulário
+        try {
+          const response = await fetch('http://localhost:8080/cadastro',{
+            method:'POST',
+            headers:{
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+          })
+          if (response.ok) {
+            setFeedBack({message:'Cadastrado', type:'sucesso'})
+          }else{
+            const erro = await response.json()
+            setFeedBack({message:erro.message, type:'error'})
+          }
+            setFormData({name:'',password:'',email:''})
+      
+        } catch (error) {
+          console.error(error)
+          setFeedBack({message:"Falha ao cadastrar", type:"erro"})
+        }
+      }
+      
+      
     
     return (
         <div className="register-container">
@@ -19,10 +44,7 @@ const CadastroUsuario = () => {
           <label htmlFor="name">Nome:</label>
           <input
             type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
+            id="name" name="name" value={formData.name} onChange={handleChange}
           />
         </div>
         <div className="form-group">
@@ -30,8 +52,9 @@ const CadastroUsuario = () => {
           <input
             type="email"
             id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            name='email'
+            value={formData.email}
+            onChange={handleChange}
             required
           />
         </div>
@@ -39,14 +62,18 @@ const CadastroUsuario = () => {
           <label htmlFor="password">Senha:</label>
           <input
             type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
+            id="senha" name="password" value={formData.password} onChange={handleChange}
           />
         </div>
         <button type="submit">Cadastrar</button>
       </form>
+      {
+        FeedBack.message && (
+          <div className={FeedBack.type}>
+              {FeedBack.message}
+          </div>
+        )
+      }
     </div>
     );
 }
