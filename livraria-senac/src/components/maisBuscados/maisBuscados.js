@@ -61,7 +61,7 @@ const MaisBuscados = () => {
               </Modal.Body>
             </Modal>
           </h1>
-          <h1><Button variant="secondary" href="#" style={{ fontSize: '16px', padding: '4px 6px', width: '100px' }}>Ver Trailer</Button></h1>
+          <h1><Button variant="secondary" href={livro.trailer} target="_blank" rel="noopener noreferrer" style={{ fontSize: '16px', padding: '4px 6px', width: '100px' }}>Ver Trailer</Button></h1>
         </div>
       ))}
     </div>

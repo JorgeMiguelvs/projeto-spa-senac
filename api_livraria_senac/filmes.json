@@ -6,7 +6,8 @@
         "categoria": "Livre",
         "duracao": "1h 40m",
         "descricao": "Em seu primeiro dia de aula, esquecendo os conselhos do pai superprotetor, Nemo é capturado por um mergulhador e acaba no aquário de um dentista. Enquanto Nemo tenta bolar um plano para escapar, seu pai cruza o oceano para resgatá-lo.",
-        "imagem": "https://m.media-amazon.com/images/I/61KcmrlBKqL._SY522_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/61KcmrlBKqL._SY522_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=lJhvtAt_1Nk&ab_channel=WaltDisneyStudiosBR"
     },
     {
         "titulo": "Shrek",
@@ -15,7 +16,8 @@
         "categoria": "Livre",
         "duracao": "1h 29m",
         "descricao": "Um ogro tem sua vida invadida por personagens de contos de fadas que acabam com a tranquilidade de seu lar. Ele faz um acordo pra resgatar uma princesa.",
-        "imagem": "https://m.media-amazon.com/images/I/81HwAYtQwkL._AC_UL480_FMwebp_QL65_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/81HwAYtQwkL._AC_UL480_FMwebp_QL65_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=CwXOrWvPBPk&ab_channel=RottenTomatoesClassicTrailers"
     },
     {
         "titulo": "Monstros S.A.",
@@ -24,7 +26,8 @@
         "categoria": "Livre",
         "duracao": "1h 32m",
         "descricao": "A maior fábrica de monstros do mundo conta com James Sullivan, um dos monstros mais assustadores, que tem o pelo azul e chifres, além de seu assistente e melhor amigo Mike, um monstro verde de um olho só. Eles têm por missão assustar as crianças, que são consideradas tóxicas pelos monstros e cujo contato com eles seria catastrófico para seu mundo. Porém, ao visitar o mundo dos humanos a trabalho, Mike e Sully conhecem a garota Boo, que acaba sem querer indo parar no mundo dos monstros.",
-        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR25DOYPLMQrDtTjJJilSrc8GgNJ4Ww_ECUku7-b6MiEA&s"
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR25DOYPLMQrDtTjJJilSrc8GgNJ4Ww_ECUku7-b6MiEA&s",
+        "trailer": "https://www.youtube.com/watch?v=iRh2kF-1X2E"
     },
     {
         "titulo": "Toy Story",
@@ -33,7 +36,8 @@
         "categoria": "Livre",
         "duracao": "1h 21m",
         "descricao": "Um cowboy de brinquedo inveja um novo brinquedo que se torna o favorito de seu dono.",
-        "imagem": "https://m.media-amazon.com/images/I/61cze5amFLL.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/61cze5amFLL.jpg",
+        "trailer": "https://www.youtube.com/watch?v=v-PjgYDrg70&ab_channel=RottenTomatoesClassicTrailers"
     },
     {
         "titulo": "Frozen: Uma Aventura Congelante",
@@ -42,7 +46,8 @@
         "categoria": "Livre",
         "duracao": "1h 42m",
         "descricao": "Uma jovem princesa precisa usar seus poderes mágicos para salvar seu reino de um inverno eterno.",
-        "imagem": "https://m.media-amazon.com/images/I/51SsItHO1GL._SY445_SX342_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/51SsItHO1GL._SY445_SX342_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=EBEbqLvrf7w&ab_channel=WaltDisneyStudiosBR"
     },
     {
         "titulo": "Harry Potter e a Pedra Filosofal",
@@ -51,7 +56,8 @@
         "categoria": "10+",
         "duracao": "2h 39m",
         "descricao": "Um jovem bruxo descobre sua verdadeira identidade enquanto frequenta uma escola de magia.",
-        "imagem": "https://m.media-amazon.com/images/I/81o7zvsOVVL._AC_UF894,1000_QL80_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/81o7zvsOVVL._AC_UF894,1000_QL80_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=9fIObnIGMlI&ab_channel=MoviecomCinemas"
     },
     {
         "titulo": "O Rei Leão",
@@ -60,7 +66,8 @@
         "categoria": "Livre",
         "duracao": "1h 28m",
         "descricao": "Um jovem leão precisa enfrentar seu destino e se tornar o rei da savana.",
-        "imagem": "https://m.media-amazon.com/images/I/313ADJei-eL._AC_UF1000,1000_QL80_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/313ADJei-eL._AC_UF1000,1000_QL80_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=J57HnR6FPW0&ab_channel=WaltDisneyStudiosPT"
     },
     {
         "titulo": "Os Incríveis",
@@ -69,7 +76,8 @@
         "categoria": "Livre",
         "duracao": "1h 55m",
         "descricao": "Uma família de super-heróis precisa se unir para enfrentar um novo vilão.",
-        "imagem": "https://m.media-amazon.com/images/S/pv-target-images/ea4e43e3850015477f1445cd49d56fa61851a4c212ea44ccfff67ab4f3176fd0.jpg"
+        "imagem": "https://m.media-amazon.com/images/S/pv-target-images/ea4e43e3850015477f1445cd49d56fa61851a4c212ea44ccfff67ab4f3176fd0.jpg",
+        "trailer": "https://www.youtube.com/watch?v=iqKEnKRDkds&ab_channel=Supercybercar"
     },
     {
         "titulo": "Procurando Dory",
@@ -78,7 +86,8 @@
         "categoria": "Livre",
         "duracao": "1h 37m",
         "descricao": "Um peixe azul com perda de memória de curto prazo embarca em uma jornada para encontrar sua família.",
-        "imagem": "https://m.media-amazon.com/images/I/71+dWqh7oVL._AC_UF894,1000_QL80_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/71+dWqh7oVL._AC_UF894,1000_QL80_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=FTuDqFIcTJE&ab_channel=WaltDisneyStudiosBR"
     },
     {
         "titulo": "O Rei Leão 2: O Reino de Simba",
@@ -87,7 +96,8 @@
         "categoria": "Livre",
         "duracao": "1h 21m",
         "descricao": "O filho de Simba enfrenta desafios enquanto aprende sobre sua verdadeira identidade.",
-        "imagem": "https://images.justwatch.com/poster/206554981/s718/o-rei-leao-ii-o-reino-de-simba.jpg"
+        "imagem": "https://images.justwatch.com/poster/206554981/s718/o-rei-leao-ii-o-reino-de-simba.jpg",
+        "trailer": "https://www.youtube.com/watch?v=A-P7GNU52Eg&ab_channel=Cad%C3%AAoL%C3%A9o"
     },
     {
         "titulo": "Toy Story 2",
@@ -96,7 +106,8 @@
         "categoria": "Livre",
         "duracao": "1h 32m",
         "descricao": "Os brinquedos de Andy são roubados por um colecionador de brinquedos e Woody tenta resgatá-los.",
-        "imagem": "https://m.media-amazon.com/images/I/51nZORhvw2L._AC_UF1000,1000_QL80_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/51nZORhvw2L._AC_UF1000,1000_QL80_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=yQyrGdtgBVA&ab_channel=HojenaSess%C3%A3odaTarde"
     },
     {
         "titulo": "Moana: Um Mar de Aventuras",
@@ -105,7 +116,8 @@
         "categoria": "Livre",
         "duracao": "1h 47m",
         "descricao": "Uma jovem corajosa navega pelo oceano em uma missão para salvar sua ilha.",
-        "imagem": "https://m.media-amazon.com/images/I/51WC3fa0xnL._UF1000,1000_QL80_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/51WC3fa0xnL._UF1000,1000_QL80_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=XL4Tf1Eohv8&ab_channel=F%C3%A3sdeCinema"
     },
     {
         "titulo": "Enrolados",
@@ -114,7 +126,8 @@
         "categoria": "Livre",
         "duracao": "1h 40m",
         "descricao": "Uma jovem aprisionada em uma torre foge com a ajuda de um ladrão encantador.",
-        "imagem": "https://m.media-amazon.com/images/I/A1lwzdAFrmL._AC_UF1000,1000_QL80_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/A1lwzdAFrmL._AC_UF1000,1000_QL80_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=Nj-Y37_Av2E&ab_channel=WaltDisneyStudiosBR"
     },
     {
         "titulo": "Divertida Mente",
@@ -123,7 +136,8 @@
         "categoria": "Livre",
         "duracao": "1h 35m",
         "descricao": "As emoções de uma menina entram em ação enquanto ela enfrenta mudanças em sua vida.",
-        "imagem": "https://m.media-amazon.com/images/I/91kv5o0X1rL._AC_UF894,1000_QL80_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/91kv5o0X1rL._AC_UF894,1000_QL80_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=ukQeR3zYncw&ab_channel=WaltDisneyStudiosBR"
     },
     {
         "titulo": "Valente",
@@ -132,7 +146,8 @@
         "categoria": "Livre",
         "duracao": "1h 40m",
         "descricao": "Uma princesa escocesa desafia tradições antigas para determinar seu próprio destino.",
-        "imagem": "https://m.media-amazon.com/images/I/81cLk-D7CzL._AC_UF1000,1000_QL80_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/81cLk-D7CzL._AC_UF1000,1000_QL80_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=4a8Ut-mVRLc&pp=ygUPdHJhaWxlciBWYWxlbnRl"
     },
     {
         "titulo": "Zootopia: Essa Cidade é o Bicho",
@@ -141,6 +156,7 @@
         "categoria": "Livre",
         "duracao": "1h 49m",
         "descricao": "Uma coelha policial e uma raposa trapaceira se unem para resolver um mistério em uma cidade de animais antropomórficos.",
-        "imagem": "https://m.media-amazon.com/images/I/91hvg3eEBtL._AC_UF894,1000_QL80_.jpg"
+        "imagem": "https://m.media-amazon.com/images/I/91hvg3eEBtL._AC_UF894,1000_QL80_.jpg",
+        "trailer": "https://www.youtube.com/watch?v=prct6AB5tR8&ab_channel=WaltDisneyStudiosBR"
     }
 ]

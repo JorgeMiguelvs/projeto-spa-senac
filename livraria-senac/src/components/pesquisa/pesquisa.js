@@ -27,13 +27,15 @@ const Pesquisa = () => {
     return (
         <div className="card-container-titulo">
             <h1>Encontre seu próximo filme</h1>
-
+            <br />
             <h1>Explore por título desejado</h1>
+            <br />
             <input className="input" placeholder="Digite algum Filme ou Título...."
+
                 value={TermoBusca}
                 onChange={(e) => setTermoBusca(e.target.value)}
             />
-            <button className="button" onClick={handleSubmit}>Pesquisar</button>
+            <button className="button" style={{ width: '150px' }} onClick={handleSubmit}>Pesquisar</button>
             <Resultado livros={livros} />
 
         </div>

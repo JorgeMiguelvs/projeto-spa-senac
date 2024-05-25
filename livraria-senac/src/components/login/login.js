@@ -33,7 +33,7 @@ const Login = () => {
       if (response.ok) {
         navigate('/home')
       } else {
-        setError('Dados inexistentes')
+        setError('Usuário ou Senha Incorreta')
       }
     } catch (error) {
       console.error(error)
@@ -42,7 +42,7 @@ const Login = () => {
 
   return (
     <div class="container">
-      <h2>Tela de Login</h2>
+      <h2> Login</h2>
       <div class="form-group">
         <label for="email">Email:</label>
         <input type="text" id="email" name="email"
@@ -59,7 +59,7 @@ const Login = () => {
           placeholder="Senha"
         />
       </div>
-      <button onClick={handleLogin}>Entrar</button>
+      <button onClick={handleLogin} style={{ width: '110px' }}>Entrar</button>
       {error && <p>{error}</p>}
     </div>
   );

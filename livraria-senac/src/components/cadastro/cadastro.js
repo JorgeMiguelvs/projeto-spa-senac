@@ -52,7 +52,7 @@ const Cadastro = () => {
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="password" value={formData.password} onChange={handleChange} />
           </div>
-          <button type="submit">Cadastrar</button>
+          <button type="submit" style={{ width: '110px' }}>Cadastrar</button>
         </form>
         {
           FeedBack.message && (
