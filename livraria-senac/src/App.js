@@ -7,29 +7,29 @@ import MenuBar from './components/navbar/Menu';
 import Pesquisa from './components/pesquisa/pesquisa';
 import Cadastro from './components/cadastro/cadastro';
 import Login from './components/login/login';
-import Home from './components/home/home';
+
 
 function App() {
   return (
     <div className="App">
       <MenuBar />
       <Routes>
-        <Route path ='/' element={
+        <Route path='/home' element={
           <>
             <header className="App-header">
-            <Pesquisa/>
+              <Pesquisa />
             </header>
-            <MaisBuscados/>
+            <MaisBuscados />
           </>
-        }/>
-        <Route path='/home' element={
-          
-            <Home/>
-          
-        }/>
+        } />
+        <Route path='/cadastro' element={
+
+          <Cadastro />
+
+        } />
         <Route path='/login' element={
-          <Login/>
-        }/>
+          <Login />
+        } />
       </Routes>
     </div>
   );
